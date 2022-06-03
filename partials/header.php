@@ -1,0 +1,1 @@
+<a href="/Plaza" class ="logo"><img src="https://i.ibb.co/Fz6dkJC/LOGO-EN-BLANCO-Y-NEGRO-02.png" alt="logo"/></a>

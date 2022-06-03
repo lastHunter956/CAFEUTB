@@ -1,0 +1,146 @@
+:root{
+    /* Colores */
+    --green: #11c05a;
+    --dark-green: #009e42;
+    --white: rgb(216, 216, 216);
+    --gray: #3f3f3f;
+    --black: #332d83;
+
+    /* Fuentes */
+    --font-1: "Courier New", Courier, monospace;
+    --font-2: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+
+    /* Tamaños */
+    --size-m: 1.1rem;
+    --size-l: 1.8rem;
+}
+
+/* Etiquetas Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clases de la Barra de Navegacion */
+.navbar{
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 1rem var(--gray);
+}
+
+.navbar-logo{
+    margin: 0.5rem;
+    color: var(--white);
+    font-family: var(--font-1);
+    font-size: var(--size-l);
+}
+
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+    transition: .3s linear;
+}
+
+.navbar-button{
+    margin: 0.5rem;
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.navbar-button i{
+    font-size: var(--size-l);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.button-active{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.navbar-list{
+    list-style: none;
+}
+
+.navbar-item{
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.navbar-link{
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-2);
+    font-size: var(--size-m);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar-link:hover{
+    color: var(--green);
+}
+
+.navbar-exit{
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-2);
+    font-size: var(--size-m);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar-exit:hover{
+    color: red;
+}
+
+.navbar-contact{
+    background: var(--green);
+    border-radius: 5px;
+}
+
+.navbar-contact:hover{
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+/* Vista Responsive */
+@media screen and (max-width: 768px) {
+    .navbar-button{
+        display: block;
+    }
+
+    .navbar-list{
+        width: 100%;
+        max-height: 0;
+        text-align: center;
+        overflow: hidden;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .navbar-list.active{
+        visibility: visible;
+    }
+    
+    .navbar-item{
+        display: block;
+        margin: 3rem;
+    }
+}

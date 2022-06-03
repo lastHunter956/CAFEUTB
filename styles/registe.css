@@ -1,0 +1,73 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: auto;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+
+.formm, .contenedor{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 37px;
+    background-color: #ffffff,;
+    box-shadow: 0 19px 38px #ffffff, 0 19px 40px #c1c1c1;
+}
+
+
+.formm input[type="password"],
+.formm input[type="text"],
+.formm input[type="email"]{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn_login{
+    width: 100%;
+    padding: 15px;
+    background-color: #201271;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+}
+
+.btn_login:hover, .btn_login:active{
+    color: #ffffff;
+    background-color: #3f3576;
+    border-color: #3f3576;
+}
+.btn_login:focus{
+    box-shadow: 0 0 0 3px rgba(75, 60, 114, 0.25);
+}
+
+.ok{
+    text-align: center;  
+    width: auto;
+    height: 0 auto;
+    padding: 12px;
+    background-color: #1e8;
+    color: #fff
+}
+
+.error{
+    text-align: center;  
+    width: auto;
+    height: 0 auto;
+    padding: 12px;
+    background-color: rgb(238, 17, 17);
+    color: #fff
+}
+
+
+ 
